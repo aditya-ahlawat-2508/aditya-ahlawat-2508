@@ -21,7 +21,7 @@ B.Tech Information Technology · Delhi Technological University · Class of 2027
 
 - **AI/ML Developer Intern at FEAT** — shipped a RAG chatbot with hybrid retrieval (BM25 + ChromaDB), cross-encoder reranking, and an LLM-as-judge groundedness pipeline. Also delivered a Smart Attendance System now live on Streamlit Cloud with Haversine anti-proxy verification.
 - **Building** a C++20 routing engine that ranks meeting points for N friends under two competing fairness rules.
-- **Learning** in public — Striver's A2Z DSA sheet in C++, and how far you can push agentic architectures before they need a validation layer.
+
 
 ---
 
