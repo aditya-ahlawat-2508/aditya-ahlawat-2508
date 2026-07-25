@@ -89,6 +89,6 @@ B.Tech Information Technology · Delhi Technological University · Class of 2027
 
 ### Elsewhere
 
-**[Portfolio](#)** · **[LinkedIn](https://www.linkedin.com/in/aditya-2503-/)** · **[LeetCode](https://leetcode.com/u/Aditya1Ahlawat/)** · **[Codolio](https://codolio.com/profile/Aditya_)** · **adityaahlawat544@gmail.com**
+**[Portfolio](https://portfolio-8dsjge45t-aditya-c16c.vercel.app/)** · **[LinkedIn](https://www.linkedin.com/in/aditya-2503-/)** · **[LeetCode](https://leetcode.com/u/Aditya1Ahlawat/)** · **[Codolio](https://codolio.com/profile/Aditya_)** · **adityaahlawat544@gmail.com**
 
 Open to SDE and AI/ML internships for 2027. If you're building something where an LLM has to be right rather than just fluent, I'd like to hear about it.
