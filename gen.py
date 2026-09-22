@@ -260,6 +260,8 @@ def route():
     open(f"{OUT}/route-so-far.svg", "w").write(s)
 
 
+
+
 hero()
 for c in CARDS:
     card(*c)
