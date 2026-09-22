@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" width="600" height="250" role="img" aria-label="AWS Cost Optimizer: Reads real Cost Explorer billing and live EC2, RDS and S3 inventory, then an LLM advisor turns it into ranked, resource-level savings.">
+<title>AWS Cost Optimizer</title>
+<defs><clipPath id="c-cost-optimizer"><rect width="600" height="250" rx="12"/></clipPath></defs>
+<g clip-path="url(#c-cost-optimizer)"><rect width="600" height="250" fill="#0F1E33"/><rect x="0" y="0" width="6" height="250" fill="#F0648C"/></g>
+<g transform="translate(24,34)"><rect x="16" y="38" width="11" height="80" rx="2" fill="#2E4A73"/><rect x="33" y="30" width="11" height="88" rx="2" fill="#2E4A73"/><rect x="50" y="46" width="11" height="72" rx="2" fill="#2E4A73"/><rect x="67" y="24" width="11" height="94" rx="2" fill="#2E4A73"/><rect x="84" y="58" width="11" height="60" rx="2" fill="#F0648C"/><rect x="101" y="74" width="11" height="44" rx="2" fill="#F0648C"/><rect x="118" y="82" width="11" height="36" rx="2" fill="#F0648C"/><path d="M84,20 L138,56" stroke="#fff" stroke-width="2" fill="none" stroke-dasharray="4 4"/><path d="M138,56 l-10,-1 l5,-8z" fill="#fff"/></g>
+<text x="196" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#F2F5F9">AWS Cost Optimizer</text>
+<rect x="33.5" y="208" width="133.0" height="24" rx="12" fill="none" stroke="#F0648C"/>
+<text x="100" y="224.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#F0648C" text-anchor="middle">Becoming a SaaS</text>
+<text x="196" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" fill="#F2F5F9">Reads real Cost Explorer billing and live EC2, RDS</text><text x="196" y="117" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" fill="#F2F5F9">and S3 inventory, then an LLM advisor turns it</text><text x="196" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" fill="#F2F5F9">into ranked, resource-level savings.</text>
+<text x="196" y="169" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#F0648C">Serverless backend provisioned end to end with Terraform</text>
+<line x1="196" y1="206" x2="580" y2="206" stroke="#22385A"/>
+<text x="196" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#8FA3BF">Terraform / Lambda / boto3 / LangGraph / GPT-4o</text>
+</svg>

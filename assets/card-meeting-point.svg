@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 250" width="600" height="250" role="img" aria-label="Fair Meeting-Point Finder: N friends in one city. Finds where they should meet so nobody gets a brutal commute, ranked under utilitarian or egalitarian fairness.">
+<title>Fair Meeting-Point Finder</title>
+<defs><clipPath id="c-meeting-point"><rect width="600" height="250" rx="12"/></clipPath></defs>
+<g clip-path="url(#c-meeting-point)"><rect width="600" height="250" fill="#0F1E33"/><rect x="0" y="0" width="6" height="250" fill="#FFB020"/></g>
+<g transform="translate(24,34)"><g stroke="#2E4A73" stroke-width="1.4" fill="none">
+<path d="M20,30 L60,22 L100,34 L126,20 M20,30 L28,70 L62,62 L100,74 L128,66 M60,22 L62,62 L66,104 M100,34 L100,74 L96,112 M28,70 L24,110 L66,104 L96,112 L130,106 M126,20 L128,66 L130,106"/></g>
+<path d="M20,30 L28,70 L62,62" stroke="#FFB020" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<path d="M126,20 L100,34 L100,74 L62,62" stroke="#3FD0C9" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<path d="M96,112 L66,104 L62,62" stroke="#F0648C" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+<circle cx="62" cy="62" r="6" fill="#fff"/></g>
+<text x="196" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="23" font-weight="700" fill="#F2F5F9">Fair Meeting-Point Finder</text>
+<rect x="48.3" y="208" width="103.4" height="24" rx="12" fill="none" stroke="#FFB020"/>
+<text x="100" y="224.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#FFB020" text-anchor="middle">In progress</text>
+<text x="196" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" fill="#F2F5F9">N friends in one city. Finds where they should</text><text x="196" y="117" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" fill="#F2F5F9">meet so nobody gets a brutal commute, ranked under</text><text x="196" y="138" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" fill="#F2F5F9">utilitarian or egalitarian fairness.</text>
+<text x="196" y="169" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#FFB020">1.6 ms per source on a 32k-node OSM road graph</text>
+<line x1="196" y1="206" x2="580" y2="206" stroke="#22385A"/>
+<text x="196" y="230" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" fill="#8FA3BF">C++20 / libosmium / pybind11 / FastAPI / MapLibre</text>
+</svg>
