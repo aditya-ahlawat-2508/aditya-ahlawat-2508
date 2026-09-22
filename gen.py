@@ -1,6 +1,6 @@
 import math, random, heapq, os
 
-OUT = "/home/claude/readme/profile/assets"
+OUT = "assets"
 os.makedirs(OUT, exist_ok=True)
 
 NAVY = "#0F1E33"
@@ -59,7 +59,6 @@ def hero():
 
     origins = [(4, 1), (15, 0), (13, 7)]
     runs = [dijkstra(o) for o in origins]
-    # egalitarian: minimise the worst commute
     best = min(nodes, key=lambda n: max(r[0].get(n, 1e18) for r in runs))
     paths = []
     for (dist, prev), o in zip(runs, origins):
@@ -184,19 +183,19 @@ def glyph_funnel(col):
 
 CARDS = [
     ("meeting-point", "Fair Meeting-Point Finder", "In progress", SAFFRON, glyph_graph,
-     "N friends in one city. Finds where they should meet so nobody gets a brutal commute, ranked under utilitarian or egalitarian fairness.",
+     "One-to-many Dijkstra over Delhi's OSM road graph, compares who's fair to everyone against who's simply fastest to reach.",
      "1.6 ms per source on a 32k-node OSM road graph",
      "C++20 / libosmium / pybind11 / FastAPI / MapLibre"),
     ("tripmate", "TripMate AI", "Becoming a SaaS", CYAN, glyph_agents,
-     "One sentence in, a day-by-day trip out. Five LangGraph agents share one typed state, with Postgres checkpoints and human-in-the-loop interrupts.",
+     "Five LangGraph agents share one Postgres-checkpointed state. I adversarially tested it and it was inventing flight prices with total confidence, fixing that before this is real.",
      "MCP tool layer for flights, hotels and weather",
      "LangGraph / MCP / FastAPI / Groq / PostgreSQL"),
     ("cost-optimizer", "AWS Cost Optimizer", "Becoming a SaaS", PINK, glyph_bars,
-     "Reads real Cost Explorer billing and live EC2, RDS and S3 inventory, then an LLM advisor turns it into ranked, resource-level savings.",
+     "Real Cost Explorer billing plus live EC2, RDS and S3 inventory. An LLM advisor turns that into resource-level savings instead of generic right-sizing advice.",
      "Serverless backend provisioned end to end with Terraform",
      "Terraform / Lambda / boto3 / LangGraph / GPT-4o"),
     ("rag", "FEAT RAG Chatbot", "Shipped", "#8B9CFF", glyph_funnel,
-     "Built during my FEAT internship: hybrid retrieval, cross-encoder reranking, and an LLM-as-judge check that flags ungrounded answers.",
+     "Hybrid retrieval plus cross-encoder reranking, with an LLM-as-judge step that checks each answer against retrieved context before it ships.",
      "BM25 + ChromaDB retrieval with groundedness scoring",
      "LangChain / ChromaDB / BM25 / cross-encoders"),
 ]
