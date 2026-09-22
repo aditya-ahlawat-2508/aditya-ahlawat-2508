@@ -24,4 +24,30 @@ An agent that quotes a flight fare has to quote the real one. A meeting point ha
   <img src="./assets/stack.svg" width="100%" alt="Stack: Python, C++, SQL. LangChain, LangGraph, MCP, hybrid RAG, Groq, GPT-4o, Ollama. FastAPI, Pydantic, PostgreSQL, ChromaDB, FAISS, Qdrant, Pandas. AWS, Terraform, Docker, GitHub Actions.">
 </p>
 
-Open to SDE and AI/ML roles for 2027 — reach me at [LinkedIn](https://www.linkedin.com/in/aditya-2503-/), [adityaahlawat544@gmail.com](mailto:adityaahlawat544@gmail.com), or check my [LeetCode](https://leetcode.com/u/Aditya1Ahlawat/) / [Portfolio](https://portfolio-taupe-eta-26.vercel.app/).
+### GitHub, in numbers
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=aditya-ahlawat-2508&show_icons=true&theme=transparent&bg_color=0F1E33&title_color=F2F5F9&text_color=8FA3BF&icon_color=3FD0C9&border_color=22385A&hide_border=false&count_private=true" width="49%" alt="Aditya's GitHub stats">
+  <img src="https://streak-stats.demolab.com/?user=aditya-ahlawat-2508&theme=dark&background=0F1E33&stroke=22385A&ring=FFB020&fire=F0648C&currStreakLabel=F2F5F9&sideLabels=8FA3BF&currStreakNum=F2F5F9&sideNums=F2F5F9&dates=8FA3BF" width="49%" alt="Aditya's GitHub streak">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aditya-ahlawat-2508&layout=compact&theme=transparent&bg_color=0F1E33&title_color=F2F5F9&text_color=8FA3BF&border_color=22385A&hide_border=false" width="45%" alt="Top languages">
+</p>
+
+### LeetCode
+
+<p align="center">
+  <img src="https://leetcard.jacoblin.cool/Aditya1Ahlawat?theme=dark&font=Karma&ext=heatmap" width="70%" alt="Aditya's LeetCode stats">
+</p>
+
+### Let's connect
+
+| | |
+|---|---|
+| **LinkedIn** | [linkedin.com/in/aditya-2503-](https://www.linkedin.com/in/aditya-2503-/) |
+| **Email** | [adityaahlawat544@gmail.com](mailto:adityaahlawat544@gmail.com) |
+| **LeetCode** | [Aditya1Ahlawat](https://leetcode.com/u/Aditya1Ahlawat/) |
+| **Portfolio** | [portfolio-taupe-eta-26.vercel.app](https://portfolio-taupe-eta-26.vercel.app/) |
+
+Open to SDE and AI/ML roles for 2027 
