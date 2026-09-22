@@ -20,9 +20,6 @@ def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-# ------------------------------------------------------------------
-# HERO: a street graph where three friends' shortest paths converge
-# ------------------------------------------------------------------
 def hero():
     random.seed(11)
     Wd, Ht = 1200, 420
@@ -123,9 +120,6 @@ def hero():
     open(f"{OUT}/hero.svg", "w").write(svg)
 
 
-# ------------------------------------------------------------------
-# PROJECT CARDS
-# ------------------------------------------------------------------
 def wrap(text, width_chars):
     words, lines, cur = text.split(), [], ""
     for w in words:
@@ -223,9 +217,6 @@ def card(slug, title, status, col, glyph, desc, proof, stack):
     open(f"{OUT}/card-{slug}.svg", "w").write(svg)
 
 
-# ------------------------------------------------------------------
-# ROUTE SO FAR: credentials as stations on one transit line
-# ------------------------------------------------------------------
 def route():
     Wd, Ht = 1200, 200
     stations = [
@@ -260,10 +251,63 @@ def route():
     open(f"{OUT}/route-so-far.svg", "w").write(s)
 
 
+def stack():
+    Wd = 1200
+    groups = [
+        ("Languages", SAFFRON, ["Python", "C++", "SQL"]),
+        ("AI & agentic", CYAN, ["LangChain", "LangGraph", "MCP", "Hybrid RAG", "Groq", "GPT-4o", "Ollama"]),
+        ("Backend & data", PINK, ["FastAPI", "Pydantic", "PostgreSQL", "ChromaDB", "FAISS", "Qdrant", "Pandas"]),
+        ("Cloud & infra", "#8B9CFF", ["AWS", "Terraform", "Docker", "GitHub Actions"]),
+    ]
+    label_w = 150
+    pad_l, pad_r = label_w + 34, 30
+    row_gap, chip_gap, chip_h = 40, 8, 27
+    avail = Wd - pad_l - pad_r
+
+    def chip_w(t):
+        return len(t) * 7.6 + 34
+
+    rows_svg = []
+    y = 56
+    for gi, (label, col, items) in enumerate(groups):
+        lines, cur, curw = [], [], 0
+        for it in items:
+            w = chip_w(it)
+            if cur and curw + chip_gap + w > avail:
+                lines.append(cur); cur, curw = [], 0
+            cur.append((it, w)); curw += (chip_gap if curw else 0) + w
+        if cur:
+            lines.append(cur)
+        block_h = len(lines) * (chip_h + 10) - 10
+        rows_svg.append(f'<text x="34" y="{y + block_h / 2 + 5}" font-family="{SANS}" font-size="14.5" font-weight="700" fill="{TEXT}">{esc(label)}</text>')
+        cy = y
+        for line in lines:
+            cx = pad_l
+            for it, w in line:
+                rows_svg.append(f'<rect x="{cx:.1f}" y="{cy}" width="{w:.1f}" height="{chip_h}" rx="{chip_h/2:.1f}" fill="none" stroke="{col}" stroke-width="1.3"/>')
+                rows_svg.append(f'<circle cx="{cx + 14:.1f}" cy="{cy + chip_h/2:.1f}" r="3" fill="{col}"/>')
+                rows_svg.append(f'<text x="{cx + 24:.1f}" y="{cy + chip_h/2 + 4.5:.1f}" font-family="{MONO}" font-size="12.5" fill="{TEXT}">{esc(it)}</text>')
+                cx += w + chip_gap
+            cy += chip_h + 10
+        y += block_h + row_gap
+        if gi < len(groups) - 1:
+            rows_svg.append(f'<line x1="34" y1="{y - row_gap/2:.1f}" x2="{Wd-30}" y2="{y - row_gap/2:.1f}" stroke="{ROAD}"/>')
+    Ht = y - row_gap + 26
+    svg = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {Wd} {Ht:.0f}" width="{Wd}" height="{Ht:.0f}" role="img" '
+        f'aria-label="Stack: Python, C++, SQL; LangChain, LangGraph, MCP, hybrid RAG, Groq, GPT-4o, Ollama; '
+        f'FastAPI, Pydantic, PostgreSQL, ChromaDB, FAISS, Qdrant, Pandas; AWS, Terraform, Docker, GitHub Actions.">'
+        f'<title>Stack</title>'
+        f'<rect width="{Wd}" height="{Ht:.0f}" rx="14" fill="{NAVY}"/>'
+        + "".join(rows_svg) +
+        "</svg>"
+    )
+    open(f"{OUT}/stack.svg", "w").write(svg)
 
 
 hero()
 for c in CARDS:
     card(*c)
 route()
+stack()
 print(sorted(os.listdir(OUT)))
